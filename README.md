@@ -3,7 +3,7 @@
 
 I'm Sayak and today I learned about GIT and it's commands:
 
-    https://github.com/majumdersayak/myFirstRepo/blob/main/gitCommands.txt
+  <a href="https://github.com/majumdersayak/myFirstRepo/blob/main/gitCommands.txt">https://github.com/majumdersayak/myFirstRepo/blob/main/gitCommands.txt</a>
 
 Also  this is my first repository
 </pre>
