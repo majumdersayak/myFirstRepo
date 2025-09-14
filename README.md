@@ -1,5 +1,4 @@
 <pre>Hello World
-============
 
 I'm Sayak and today I learned about GIT and it's commands:
 
