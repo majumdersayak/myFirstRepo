@@ -1,0 +1,103 @@
+            ---------------------------
+                    GIT COMMANDS
+            ---------------------------
+
+
+===================
+1. FIRST-TIME SETUP
+===================
+
+    git config --global user.name "username"
+    git config --global user.email "user@email.com"
+    git config --list         # to see what I set up
+
+
+=================
+2. BASIC COMMANDS
+=================
+
+    git log                   # check the whole commits history
+    git add -A                # add all changes
+    git add .                 # add all changes in current directory
+    git commit -m "Message"   # commit with message
+    git push origin [branch]  # push to branch
+
+
+======================
+3. CLONE A REPOSITORY
+======================
+
+    git clone [https URL]
+
+
+=============
+4. REMOTE ADD
+=============
+
+    git remote add origin [https URL]
+
+
+====================
+5. BRANCH MANAGEMENT
+====================
+
+--- Create a New Branch ---
+
+    git branch                  # list branches
+    git branch [new-branch]     # create new branch
+    git checkout [new-branch]   # switch to the new branch
+
+--- Delete a Branch ---
+
+    From Local System:
+        git branch -d [branch-name]
+
+    From Remote (Global) System:
+        git push origin --delete [branch-name]
+
+--- Merge Branch into Main/Master ---
+
+    # First, switch back to main/master branch
+    git checkout main   # or master
+    git merge [branch-name]
+
+
+=======================
+6. VIEWING DIFFERENCES
+=======================
+
+    git diff                 # view all differences
+    git diff [file-name]     # view difference in a specific file
+    git diff --staged        # view staged changes
+
+
+==================
+7. UNDOING COMMITS
+==================
+
+    git log                  # full history
+    git log --oneline        # short history with commit hashes
+    git reset [commit-hash]  # reset to a specific commit
+
+
+====================
+8. UNSTAGING CHANGES
+====================
+
+    git reset HEAD [file]    # unstage file, keep changes
+    git restore --staged .   # unstage everything
+
+
+===============
+9. .gitignore
+===============
+
+Create `.gitignore` file:
+
+    touch .gitignore
+
+Inside `.gitignore`:
+
+    file.txt        # ignore a specific file
+    assets/         # ignore a whole directory
+    *.txt           # ignore all files of a type
